@@ -58,9 +58,9 @@ static-website-cdk/
 │   ├── styles.css
 │   └── script.js
 │
-└── static_website/
+└── aws_static_website/
     ├── __init__.py
-    └── static_website_stack.py
+    └── aws_static_website_stack.py
 ```
 
 ---
