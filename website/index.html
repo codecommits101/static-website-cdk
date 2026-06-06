@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Website - S3 & CloudFront</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">StaticSite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Static Website</h1>
+                <p>Deployed on AWS S3 and CloudFront using CDK</p>
+                <button class="cta-button" onclick="scrollToSection('features')">Learn More</button>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Powered by CloudFront CDN for global content delivery</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure</h3>
+                    <p>HTTPS enabled with SSL certificates</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Cost Effective</h3>
+                    <p>Pay only for what you use with S3 storage</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global</h3>
+                    <p>Deployed across multiple edge locations worldwide</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About This Project</h2>
+            <div class="about-content">
+                <p>This is a demonstration of a static website deployed using AWS CDK (Cloud Development Kit) with Python. The infrastructure is defined as code, making it easy to version control, test, and deploy.</p>
+                <p>The website is hosted on Amazon S3 and served through Amazon CloudFront for optimal performance and security.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Static Website. Built with AWS CDK.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
