@@ -163,7 +163,7 @@ cdk.out/
 Generate YAML templates:
 
 ```bash
-cdk synth --yaml
+cdk synth
 ```
 
 ---
