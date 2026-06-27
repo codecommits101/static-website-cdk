@@ -3,67 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Website - S3 & CloudFront</title>
+    <title>King of Pop - Michael Jackson Tribute</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">StaticSite</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Our Static Website</h1>
-                <p>Deployed on AWS S3 and CloudFront using CDK</p>
-                <button class="cta-button" onclick="scrollToSection('features')">Learn More</button>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-visual">
+                <img src="https://i.pinimg.com/1200x/13/0c/81/130c81965b36b01b5be4c88449f50608.jpg" alt="Michael Jackson" class="mj-logo">
+                <div class="hero-glow"></div>
             </div>
-        </section>
+            <div class="hero-text">
+                <h1 class="hero-title">The King of Pop</h1>
+                <p class="hero-subtitle">Michael Jackson • 1958 - 2009</p>
+                <a href="#albums" class="scroll-btn">Explore His Legacy</a>
+            </div>
+        </div>
+    </section>
 
-        <section id="features" class="features">
-            <h2>Features</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Fast Delivery</h3>
-                    <p>Powered by CloudFront CDN for global content delivery</p>
+    <!-- Legacy Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Legacy Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-item" data-year="1958">
+                    <div class="timeline-year">1958</div>
+                    <div class="timeline-content">
+                        <h3>Born to Perform</h3>
+                        <p>Michael Joseph Jackson born on August 29th in Gary, Indiana, the eighth of ten children in the Jackson family.</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure</h3>
-                    <p>HTTPS enabled with SSL certificates</p>
+                <div class="timeline-item" data-year="1964">
+                    <div class="timeline-year">1964</div>
+                    <div class="timeline-content">
+                        <h3>The Jackson 5</h3>
+                        <p>Joins his brothers in The Jackson 5, showcasing extraordinary talent from age six.</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>Cost Effective</h3>
-                    <p>Pay only for what you use with S3 storage</p>
+                <div class="timeline-item" data-year="1971">
+                    <div class="timeline-year">1971</div>
+                    <div class="timeline-content">
+                        <h3>Solo Career Begins</h3>
+                        <p>Launches solo career with "Got to Be There" while still performing with The Jackson 5.</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Global</h3>
-                    <p>Deployed across multiple edge locations worldwide</p>
+                <div class="timeline-item" data-year="1979">
+                    <div class="timeline-year">1979</div>
+                    <div class="timeline-content">
+                        <h3>Off The Wall</h3>
+                        <p>First adult solo album becomes a massive success, establishing him as a solo superstar.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="1982">
+                    <div class="timeline-year">1982</div>
+                    <div class="timeline-content">
+                        <h3>Thriller Revolution</h3>
+                        <p>Thriller becomes the best-selling album of all time, revolutionizing music videos and pop culture.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="1987">
+                    <div class="timeline-year">1987</div>
+                    <div class="timeline-content">
+                        <h3>Bad Era</h3>
+                        <p>Bad album debuts at #1, producing five consecutive #1 singles.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="1992">
+                    <div class="timeline-year">1992</div>
+                    <div class="timeline-content">
+                        <h3>Dangerous Tour</h3>
+                        <p>Dangerous album and world tour, continuing his reign as the King of Pop.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2009">
+                    <div class="timeline-year">2009</div>
+                    <div class="timeline-content">
+                        <h3>This Is It</h3>
+                        <p>Announces final concert series "This Is It" in London. Passes away on June 25th, leaving an indelible legacy.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="about">
-            <h2>About This Project</h2>
-            <div class="about-content">
-                <p>This is a demonstration of a static website deployed using AWS CDK (Cloud Development Kit) with Python. The infrastructure is defined as code, making it easy to version control, test, and deploy.</p>
-                <p>The website is hosted on Amazon S3 and served through Amazon CloudFront for optimal performance and security.</p>
+    <!-- Albums Section -->
+    <section id="albums" class="albums">
+        <div class="container">
+            <h2 class="section-title">Legendary Albums</h2>
+            <div class="albums-grid">
+                <!-- Album cards will be populated by JavaScript -->
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Static Website. Built with AWS CDK.</p>
+    <!-- Quote Section -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <blockquote class="quote-text">
+                "If you enter this world knowing you are loved and you leave this world knowing the same, then everything that happens in between can be dealt with."
+            </blockquote>
+            <cite class="quote-author">— Michael Jackson</cite>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    This is a tribute to the King of Pop, made by fans for educational purposes. 
+                    Served to you by S3 and CloudFront. Not affiliated with Michael Jackson or his estate. 
+                    No monetary gain is intended from this tribute.
+                </p>
+                <div class="footer-decoration">
+                    <span class="moonwalk-icon">🕺</span>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
