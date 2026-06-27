@@ -228,3 +228,6 @@ cdk diff
 # License
 
 This project is open-source and available for learning and educational purposes.
+
+# Disclaimer
+This project is a non-commercial fan tribute created solely for educational and learning purposes. All rights to the artist's name, music, trademarks, images, and related intellectual property belong to their respective owners.
